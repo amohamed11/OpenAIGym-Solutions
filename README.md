@@ -14,7 +14,7 @@ Max Episode = 1000
 
 ### Solution 
 Required Avg score over 100 consecutive episodes = -110.00   
-Achieved Avg score over 100 consecutive episodes = **-109.43**   
+Achieved Avg score over 100 consecutive episodes = **-109.41**   
 Number of Episodes for solution = **340**
 
 [Video Link](https://streamable.com/sro3q)
