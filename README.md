@@ -2,6 +2,9 @@
 A collections of solutions for openai gym environments, using mainly reinforcement learning techniques.
 
 ## [MountainCar-v0](https://github.com/amohamed11/OpenAIGym-Solutions/tree/master/MountainCar)  
+As of 12/10/2018 11:30PM MDT, currently #1 on the leaderboard  
+
+![](https://i.postimg.cc/mgcc8Z6g/Mountain-Car-Leaderboard-Proof.png)  
 
 ### Agent:
 A Sarsa(λ) Agent with eligibility trace and linear function approximation.  
