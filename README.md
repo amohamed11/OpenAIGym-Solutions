@@ -13,10 +13,11 @@ Modified to run the agent as necessary.
 Max Episode = 1000  
 
 ### Solution 
-*Video to be posted*   
 Required Avg score over 100 consecutive episodes = -110.00   
 Achieved Avg score over 100 consecutive episodes = **-109.43**   
 Number of Episodes for solution = **340**
+
+[Video Link](https://streamable.com/sro3q)
 
 ![](https://github.com/amohamed11/OpenAIGym-Solutions/blob/master/MountainCar/rewardPerEpisode.png)
 

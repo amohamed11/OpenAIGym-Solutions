@@ -6,6 +6,9 @@ from gym import wrappers, logger
 from SarsaLambdaAgent import SarsaLambdaAgent
 import numpy as np
 
+def video_schedule(episode_id):
+    return episode_id % 50 == 0 or episode_id % 340 == 0
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=None)
     parser.add_argument('env_id', nargs='?', default='MountainCar-v0', help='Select the environment to run')
@@ -22,8 +25,9 @@ if __name__ == '__main__':
     # will be namespaced). You can also dump to a tempdir if you'd
     # like: tempfile.mkdtemp().
     outdir = '/tmp/SarsaControAgent-results'
-    env = wrappers.Monitor(env_orig, directory=outdir, force=True)
+    env = wrappers.Monitor(env_orig, directory=outdir, force=True, video_callable=video_schedule)
     env.seed(0)
+    np.random.seed(0)
     agent = SarsaLambdaAgent()
 
     episode_count = 2000
